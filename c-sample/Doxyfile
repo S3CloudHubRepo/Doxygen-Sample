@@ -5,37 +5,38 @@ INPUT                  = example.c
 RECURSIVE              = NO
 
 # Build settings
-EXTRACT_ALL            = YES
-EXTRACT_PRIVATE        = YES
-EXTRACT_STATIC         = YES
-EXTRACT_LOCAL_CLASSES  = YES
-EXTRACT_ANON_NSPACES   = NO
-
+EXTRACT_ALL            = YES                # Extract all documentation, even if not explicitly documented
+EXTRACT_PRIVATE        = YES                # Include private members
+EXTRACT_STATIC         = YES                # Include static functions and variables
+EXTRACT_LOCAL_CLASSES  = YES                # Include local classes (though not generally common in C, useful for C++)
+EXTRACT_ANON_NSPACES   = YES                # Also extract anonymous namespaces
 
 # Warnings
 WARN_LOGFILE = doxygen_warnings.log
-WARNINGS               = YES
-WARN_IF_UNDOCUMENTED   = YES
-WARN_IF_DOC_ERROR      = YES
-WARN_NO_PARAMDOC       = YES
-WARN_AS_ERROR          = NO
-QUIET                  = NO
+WARNINGS               = YES                # Enable warnings
+WARN_IF_UNDOCUMENTED   = YES                # Warn if an entity is undocumented
+WARN_IF_DOC_ERROR      = YES                # Warn if documentation has errors (missing `@param` etc.)
+WARN_NO_PARAMDOC       = YES                # Warn if parameters are undocumented
+WARN_AS_ERROR          = NO                 # Do not treat warnings as errors
+QUIET                  = NO                 # Display warning in the console
 
-ENABLE_PREPROCESSING = YES
-MACRO_EXPANSION      = YES
-
+# Enable preprocessing for handling macros, includes, etc.
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
 
 # Documentation format
-GENERATE_HTML          = YES
-GENERATE_LATEX         = NO
-GENERATE_MAN           = NO
-GENERATE_XML           = NO
-GENERATE_TREEVIEW      = YES
+GENERATE_HTML          = YES                # Generate HTML documentation
+GENERATE_LATEX         = NO                 # Do not generate LaTeX
+GENERATE_MAN           = NO                 # Do not generate man pages
+GENERATE_XML           = NO                 # Do not generate XML output
+GENERATE_TREEVIEW      = YES                # Generate treeview in HTML
 
 # Source code options
-SOURCE_BROWSER         = YES
-INLINE_SOURCES         = YES
+SOURCE_BROWSER         = YES                # Enable browsing the source code
+INLINE_SOURCES         = YES                # Inline the source code in the documentation
 
 # C-specific options
-OPTIMIZE_OUTPUT_FOR_C  = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES                # Optimize output for C language
 
+# Optional improvement for better handling of file inputs
+FILE_PATTERNS          = *.c                # Ensure it includes only .c files (can add more file patterns like *.h if needed)
