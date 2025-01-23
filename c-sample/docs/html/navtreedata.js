@@ -26,18 +26,14 @@ var NAVTREE =
 [
   [ "Doxygen C Test Project", "index.html", [
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "Globals", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"example_8c.html"
+"example_8c_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

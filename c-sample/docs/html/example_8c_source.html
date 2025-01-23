@@ -97,89 +97,59 @@ $(document).ready(function(){initNavTree('example_8c_source.html',''); initResiz
   <div class="headertitle"><div class="title">example.c</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="example_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="example_8c.html#ae5a0c053aa6696aace68bff13ff3c988">    9</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="example_8c.html#ae5a0c053aa6696aace68bff13ff3c988">addNumbers</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keywordtype">int</span> addNumbers(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">return</span> a + b;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
-</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="example_8c.html#a23a028fc472c7a1e38b6b724d9b328e0">   19</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="example_8c.html#a23a028fc472c7a1e38b6b724d9b328e0">multiplyNumbers</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">int</span> multiplyNumbers(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b) {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordflow">return</span> a * b;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
-</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="example_8c.html#ad12bec98ee66db5e91feeb852d42b4de">   26</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#ad12bec98ee66db5e91feeb852d42b4de">divideNumbers</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">float</span> divideNumbers(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
-</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="example_8c.html#ab12b3cad66448e2bfc8c590d002052da">   33</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="example_8c.html#ab12b3cad66448e2bfc8c590d002052da">square</a>(<span class="keywordtype">int</span> x) {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">int</span> square(<span class="keywordtype">int</span> x) {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> x * x;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="example_8c.html#a07ebb06aac2aa25920a8fb8bd5edb0d6">   43</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#a07ebb06aac2aa25920a8fb8bd5edb0d6">divideNumbers1</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">float</span> divideNumbers1(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="example_8c.html#a1bd8ddcc960f469723358236b1f4a93d">   52</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#a1bd8ddcc960f469723358236b1f4a93d">divideNumbers2</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">float</span> divideNumbers2(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
-</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="example_8c.html#af849063b398b4b8213ba38416f9779e9">   61</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#af849063b398b4b8213ba38416f9779e9">divideNumbers3</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keywordtype">float</span> divideNumbers3(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
-</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="example_8c.html#a98b2088a7703d1862d4cd516a487e709">   69</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#a98b2088a7703d1862d4cd516a487e709">divideNumbers4</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keywordtype">float</span> divideNumbers4(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
-</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="example_8c.html#ae6e129259c23c53d25a92edecc67e9a3">   78</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#ae6e129259c23c53d25a92edecc67e9a3">divideNumbers5</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keywordtype">float</span> divideNumbers5(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
-</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="example_8c.html#af524ea15120d64dc489cdb4b334fa121">   88</a></span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#af524ea15120d64dc489cdb4b334fa121">divideNumbers6</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keywordtype">float</span> divideNumbers6(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
-</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">float</span> <a class="code hl_function" href="example_8c.html#ad12bec98ee66db5e91feeb852d42b4de">divideNumbers</a>(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">float</span> divideNumbers(<span class="keywordtype">int</span> numerator, <span class="keywordtype">int</span> denominator) {</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> (<span class="keywordtype">float</span>)numerator / denominator;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="ttc" id="aexample_8c_html_a07ebb06aac2aa25920a8fb8bd5edb0d6"><div class="ttname"><a href="example_8c.html#a07ebb06aac2aa25920a8fb8bd5edb0d6">divideNumbers1</a></div><div class="ttdeci">float divideNumbers1(int numerator, int denominator)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00043">example.c:43</a></div></div>
-<div class="ttc" id="aexample_8c_html_a1bd8ddcc960f469723358236b1f4a93d"><div class="ttname"><a href="example_8c.html#a1bd8ddcc960f469723358236b1f4a93d">divideNumbers2</a></div><div class="ttdeci">float divideNumbers2(int numerator, int denominator)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00052">example.c:52</a></div></div>
-<div class="ttc" id="aexample_8c_html_a23a028fc472c7a1e38b6b724d9b328e0"><div class="ttname"><a href="example_8c.html#a23a028fc472c7a1e38b6b724d9b328e0">multiplyNumbers</a></div><div class="ttdeci">int multiplyNumbers(int a, int b)</div><div class="ttdoc">This function multiplies two numbers.</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00019">example.c:19</a></div></div>
-<div class="ttc" id="aexample_8c_html_a98b2088a7703d1862d4cd516a487e709"><div class="ttname"><a href="example_8c.html#a98b2088a7703d1862d4cd516a487e709">divideNumbers4</a></div><div class="ttdeci">float divideNumbers4(int numerator, int denominator)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00069">example.c:69</a></div></div>
-<div class="ttc" id="aexample_8c_html_ab12b3cad66448e2bfc8c590d002052da"><div class="ttname"><a href="example_8c.html#ab12b3cad66448e2bfc8c590d002052da">square</a></div><div class="ttdeci">int square(int x)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00033">example.c:33</a></div></div>
-<div class="ttc" id="aexample_8c_html_ad12bec98ee66db5e91feeb852d42b4de"><div class="ttname"><a href="example_8c.html#ad12bec98ee66db5e91feeb852d42b4de">divideNumbers</a></div><div class="ttdeci">float divideNumbers(int numerator, int denominator)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00026">example.c:26</a></div></div>
-<div class="ttc" id="aexample_8c_html_ae5a0c053aa6696aace68bff13ff3c988"><div class="ttname"><a href="example_8c.html#ae5a0c053aa6696aace68bff13ff3c988">addNumbers</a></div><div class="ttdeci">int addNumbers(int a, int b)</div><div class="ttdoc">This function adds two numbers.</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00009">example.c:9</a></div></div>
-<div class="ttc" id="aexample_8c_html_ae6e129259c23c53d25a92edecc67e9a3"><div class="ttname"><a href="example_8c.html#ae6e129259c23c53d25a92edecc67e9a3">divideNumbers5</a></div><div class="ttdeci">float divideNumbers5(int numerator, int denominator)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00078">example.c:78</a></div></div>
-<div class="ttc" id="aexample_8c_html_af524ea15120d64dc489cdb4b334fa121"><div class="ttname"><a href="example_8c.html#af524ea15120d64dc489cdb4b334fa121">divideNumbers6</a></div><div class="ttdeci">float divideNumbers6(int numerator, int denominator)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00088">example.c:88</a></div></div>
-<div class="ttc" id="aexample_8c_html_af849063b398b4b8213ba38416f9779e9"><div class="ttname"><a href="example_8c.html#af849063b398b4b8213ba38416f9779e9">divideNumbers3</a></div><div class="ttdeci">float divideNumbers3(int numerator, int denominator)</div><div class="ttdef"><b>Definition</b> <a href="example_8c_source.html#l00061">example.c:61</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="example_8c.html">example.c</a></li>
+    <li class="navelem"><b>example.c</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
