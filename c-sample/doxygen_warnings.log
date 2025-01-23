@@ -1,0 +1,10 @@
+/home/runner/work/Doxygen-Sample/Doxygen-Sample/c-sample/example.c:24: warning: argument 'and' of command @param is not found in the argument list of divideNumbers(int numerator, int denominator)
+/home/runner/work/Doxygen-Sample/Doxygen-Sample/c-sample/example.c:24: warning: The following parameters of divideNumbers(int numerator, int denominator) are not documented:
+  parameter 'numerator'
+  parameter 'denominator'
+/home/runner/work/Doxygen-Sample/Doxygen-Sample/c-sample/example.c:57: warning: argument 'unused_param' of command @param is not found in the argument list of divideNumbers3(int numerator, int denominator)
+/home/runner/work/Doxygen-Sample/Doxygen-Sample/c-sample/example.c:57: warning: The following parameter of divideNumbers3(int numerator, int denominator) is not documented:
+  parameter 'denominator'
+/home/runner/work/Doxygen-Sample/Doxygen-Sample/c-sample/example.c:31: warning: argument 'and' of command @param is not found in the argument list of square(int x)
+/home/runner/work/Doxygen-Sample/Doxygen-Sample/c-sample/example.c:31: warning: The following parameter of square(int x) is not documented:
+  parameter 'x'
