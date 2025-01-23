@@ -1,0 +1,3 @@
+D:/Doxy Error/cpp-language/sample.cpp:39: warning: argument 'and' of command @param is not found in the argument list of square(int x)
+D:/Doxy Error/cpp-language/sample.cpp:39: warning: The following parameter of square(int x) is not documented:
+  parameter 'x'

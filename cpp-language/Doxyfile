@@ -1,0 +1,16 @@
+# Enable the processing of C++ files
+FILE_PATTERNS          = *.cpp *.h
+
+# Extract documentation for all functions, including static and local classes
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+
+# Enable warnings for undocumented functions
+WARN_IF_UNDOCUMENTED   = YES
+WARNINGS               = YES
+WARN_NO_PARAMDOC       = YES
+
+# Enable log file for warnings
+WARN_LOGFILE           = doxygen_warnings.log
