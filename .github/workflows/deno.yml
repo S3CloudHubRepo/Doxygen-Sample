@@ -25,6 +25,7 @@ jobs:
         run: |
           rm -f c-sample/doxygen_warnings.log
           rm -f cpp-sample/doxygen_warnings.log
+          rm -rf log
           pwd
           ls c-sample/
           ls cpp-sample/
