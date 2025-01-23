@@ -21,6 +21,11 @@ jobs:
           sudo apt update
           sudo apt install -y doxygen graphviz
 
+      - name: Remove existing warning files
+        run: |
+          rm -f c-sample/doxygen_warnings.log
+          rm -f cpp-sample/doxygen_warnings.log
+
       - name: Run Doxygen for C samples
         run: |
           cd c-sample
@@ -30,15 +35,25 @@ jobs:
         run: |
           cd cpp-sample
           doxygen Doxyfile
-          
+
+      - name: Move Doxygen Warning Logs
+        run: |
+          mkdir -p log
+          cp c-sample/doxygen_warnings.log log/
+          cp cpp-sample/doxygen_warnings.log log/
+      
+      - name: Commit and Push Doxygen Logs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add log/
+          git commit -m "Add updated Doxygen warning logs"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload generated documentation (optional)
         uses: actions/upload-artifact@v3
         with:
           name: doxygen-docs
           path: ./html  # or wherever your docs are generated
-      - name: Upload Doxygen Warning Log (optional)
-        uses: actions/upload-artifact@v3
-        with:
-          name: doxygen-warning-log
-          path: c-sample/doxygen_warnings.log  # Adjust path as needed
-
