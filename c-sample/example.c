@@ -20,6 +20,9 @@ int multiplyNumbers(int a, int b) {
     return a * b;
 }
 
+/**
+ * This function squares a number. (Missing @param and @return tags)
+ */
 float divideNumbers(int numerator, int denominator) {
     return (float)numerator / denominator;
 }
