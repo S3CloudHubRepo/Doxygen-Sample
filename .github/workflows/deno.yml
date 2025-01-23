@@ -1,0 +1,38 @@
+name: Doxygen Documentation
+
+on:
+  push:
+    branches:
+      - main  # You can specify other branches like 'develop' or 'feature/*'
+  pull_request:
+    branches:
+      - main  # You can specify other branches if needed
+
+jobs:
+  doxygen:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Doxygen
+        run: |
+          sudo apt update
+          sudo apt install -y doxygen graphviz
+
+      - name: Run Doxygen for C samples
+        run: |
+          cd c-sample
+          doxygen Doxyfile
+
+      - name: Run Doxygen for C++ samples
+        run: |
+          cd cpp-sample
+          doxygen Doxyfile
+          
+      - name: Upload generated documentation (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: doxygen-docs
+          path: ./html  # or wherever your docs are generated
