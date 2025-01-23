@@ -25,6 +25,9 @@ jobs:
         run: |
           rm -f c-sample/doxygen_warnings.log
           rm -f cpp-sample/doxygen_warnings.log
+          pwd
+          ls c-sample/
+          ls cpp-sample/
 
       - name: Run Doxygen for C samples
         run: |
@@ -35,6 +38,13 @@ jobs:
         run: |
           cd cpp-sample
           doxygen Doxyfile
+
+      - name: List files before copying logs
+        run: |
+          echo "Listing files in c-sample:"
+          ls -l c-sample
+          echo "Listing files in cpp-sample:"
+          ls -l cpp-sample
 
       - name: Move Doxygen Warning Logs
         run: |
