@@ -5,7 +5,7 @@ INPUT                  = example.c
 RECURSIVE              = NO
 
 # Build settings
-EXTRACT_ALL            = YES                # Extract all documentation, even if not explicitly documented
+EXTRACT_ALL            = NO                # Extract all documentation, even if not explicitly documented
 EXTRACT_PRIVATE        = YES                # Include private members
 EXTRACT_STATIC         = YES                # Include static functions and variables
 EXTRACT_LOCAL_CLASSES  = YES                # Include local classes (though not generally common in C, useful for C++)
