@@ -36,3 +36,9 @@ jobs:
         with:
           name: doxygen-docs
           path: ./html  # or wherever your docs are generated
+      - name: Upload Doxygen Warning Log (optional)
+        uses: actions/upload-artifact@v3
+        with:
+          name: doxygen-warning-log
+          path: c-sample/doxygen_warnings.log  # Adjust path as needed
+
