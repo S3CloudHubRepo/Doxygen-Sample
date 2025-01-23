@@ -5,7 +5,6 @@ INPUT                  = example.c
 RECURSIVE              = NO
 
 # Build settings
-EXTRACT_ALL            = NO                # Extract all documentation, even if not explicitly documented
 EXTRACT_PRIVATE        = YES                # Include private members
 EXTRACT_STATIC         = YES                # Include static functions and variables
 EXTRACT_LOCAL_CLASSES  = YES                # Include local classes (though not generally common in C, useful for C++)
@@ -40,3 +39,6 @@ OPTIMIZE_OUTPUT_FOR_C  = YES                # Optimize output for C language
 
 # Optional improvement for better handling of file inputs
 FILE_PATTERNS          = *.c                # Ensure it includes only .c files (can add more file patterns like *.h if needed)
+
+EXTRACT_ALL            = NO
+
