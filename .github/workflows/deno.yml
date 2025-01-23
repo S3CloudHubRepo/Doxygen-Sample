@@ -44,8 +44,10 @@ jobs:
         run: |
           echo "Listing files in c-sample:"
           ls -l c-sample
+          cat c-sample/doxygen_warnings.log
           echo "Listing files in cpp-sample:"
           ls -l cpp-sample
+          cat cpp-sample/doxygen_warnings.log
 
       - name: Move Doxygen Warning Logs
         run: |
