@@ -49,9 +49,10 @@ jobs:
 
       - name: Move Doxygen Warning Logs
         run: |
-          mkdir -p log
-          cp c-sample/doxygen_warnings.log log/
-          cp cpp-sample/doxygen_warnings.log log/
+          mkdir -p c-sample/log
+          mkdir -p cpp-sample/log
+          cp c-sample/doxygen_warnings.log c-sample/log/
+          cp cpp-sample/doxygen_warnings.log cpp-sample/log/
       
       - name: Commit and Push Doxygen Logs
         run: |
